@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chapter 3 – Updating UI with JavaScript</title>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="text/javascript">
+			//select the div element with the id app
+			const app = document.getElementById("app");
+
+			//create a new h1 element
+			const header = document.createElement("h1");
+
+			//crete a new text node for the h1 element
+			const text = "Hello World!";
+			const headerContent = document.createTextNode(text);
+
+			//append the text node to the h1 element
+			header.appendChild(headerContent);
+
+			//place the h1 element inside the div element
+			app.appendChild(header);
+		</script>
+	</body>
+</html>
